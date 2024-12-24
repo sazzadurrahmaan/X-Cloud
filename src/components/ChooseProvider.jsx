@@ -116,92 +116,69 @@ const ChooseProvider = () => {
                                 checked={isChecked}
                                 onChange={handleToggle}
                             />
-                            <div className="w-11 h-6 bg-[#9DA2AE] peer-focus:ring-4 peer-focus:ring-blue-500  rounded-full 
-                peer-checked:after:translate-x-5 peer-checked:after:border-white 
-                after:content-[''] after:absolute after:top-[2px] after:left-[2px] 
-                after:bg-white after:border-gray-300 after:border 
-                after:rounded-full after:h-5 after:w-5 after:transition-all 
-                peer-checked:bg-blue-500"></div>
+                            <div className="w-11 h-6 bg-[#9DA2AE]   rounded-full 
+                                            peer-checked:after:translate-x-5  
+                                            after:content-[''] after:absolute after:top-[2px] after:left-[2px] 
+                                            after:bg-white  
+                                            after:rounded-full after:h-5 after:w-5 after:transition-all 
+                                            peer-checked:bg-[#32BA7C]">
+                            </div>
                         </label>
                     </div>
 
                     {isChecked && (
                         <div>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                                {/* Blueprint Card 1 */}
-                                <div className="bg-gray-800 p-4 rounded-lg border border-blue-500 flex flex-col">
-                                    <h3 className="font-bold text-lg mb-2">Blueprint Name One</h3>
-                                    <p className="bg-blue-500 text-xs font-semibold text-white py-1 px-2 rounded-md w-max">
-                                        Default
-                                    </p>
-                                    <div className="mt-4 flex items-center gap-2">
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            A
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            N
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            4+
-                                        </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+                                {/* Card 1 */}
+                                <div class="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-[#156EE5] text-gray-300 ">
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name One</h3>
+                                        <span class=" bg-[#313A6C] text-[#919DB9] rounded px-3 text-[12px]">default</span>
                                     </div>
-                                    <input
-                                        type="radio"
-                                        name="blueprint"
-                                        className="mt-4 w-5 h-5 text-blue-500 border-[#313A6C] rounded-full focus:ring-2 focus:ring-blue-500"
-                                        defaultChecked
-                                    />
+                                    <div class="mt-4 flex items-center space-x-2">
+                                        <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    </div>
+                                    <input type="radio" name="blueprint" class="absolute top-3 right-4 form-radio text-[#147AFF] focus:ring-[#147AFF]" checked />
                                 </div>
 
-                                {/* Blueprint Card 2 */}
-                                <div className="bg-gray-800 p-4 rounded-lg border border-[#313A6C] flex flex-col">
-                                    <h3 className="font-bold text-lg mb-2">Blueprint Name2</h3>
-                                    <div className="mt-4 flex items-center gap-2">
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            A
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            N
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            4+
-                                        </div>
+                                {/*  Card 2 */}
+                                <div class="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-gray-700 text-gray-300">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name2</h3>
                                     </div>
-                                    <input
-                                        type="radio"
-                                        name="blueprint"
-                                        className="mt-4 w-5 h-5 text-blue-500 border-[#313A6C] rounded-full focus:ring-2 focus:ring-blue-500"
-                                    />
+                                    <div class="mt-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    </div>
+                                    <input type="radio" name="blueprint" class="absolute top-3 right-4 form-radio text-[#147AFF] focus:ring-[#147AFF]" />
                                 </div>
 
-                                {/* Blueprint Card 3 */}
-                                <div className="bg-gray-800 p-4 rounded-lg border border-[#313A6C] flex flex-col">
-                                    <h3 className="font-bold text-lg mb-2">Blueprint Name3</h3>
-                                    <div className="mt-4 flex items-center gap-2">
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            A
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            N
-                                        </div>
-                                        <div className="bg-[#313A6C] text-white text-sm py-1 px-3 rounded-md">
-                                            4+
-                                        </div>
+                                {/* < Card 3  */}
+                                <div class="relative flex flex-col px-6 py-4 border rounded-lg bg-[#1D2239] border-gray-700 text-gray-300">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name3</h3>
                                     </div>
-                                    <input
-                                        type="radio"
-                                        name="blueprint"
-                                        className="mt-4 w-5 h-5 text-blue-500 border-[#313A6C] rounded-full focus:ring-2 focus:ring-blue-500"
-                                    />
+                                    <div class="mt-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    </div>
+                                    <input type="radio" name="blueprint" class="absolute top-3 right-4 form-radio text-[#147AFF] focus:ring-[#147AFF]" />
                                 </div>
 
                             </div>
                             {/* View All and Create Blueprint */}
                             <div className="flex justify-end items-center gap-4">
-                                <a href="#view-all" className="text-blue-500 text-sm hover:underline">
+                                <a href="#view-all" className="text-[#147AFF] text-sm hover:underline">
                                     View all →
                                 </a>
-                                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
+                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
                                     + Create New Blueprint
                                 </button>
                             </div>
@@ -217,7 +194,7 @@ const ChooseProvider = () => {
 
             {/* More Advanced Settings */}
             <div className="mt-8">
-                <button className="bg-gray-800 hover:bg-[#313A6C] text-white px-4 py-2 rounded-md flex items-center gap-2">
+                <button className="bg-[#1D2239] hover:bg-[#313A6C] text-white px-4 py-2 rounded-md flex items-center gap-2">
                     <span>More Advanced Settings</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
