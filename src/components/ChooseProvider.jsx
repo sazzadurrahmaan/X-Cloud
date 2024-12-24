@@ -175,10 +175,10 @@ const ChooseProvider = () => {
                             </div>
                             {/* View All and Create Blueprint */}
                             <div className="flex justify-end items-center gap-4">
-                                <a href="#view-all" className="text-[#147AFF] text-sm hover:underline">
+                                <a href="#view-all" className="text-[#147AFF] hover:underline text-[14px] leading-[16px] font-semibold">
                                     View all →
                                 </a>
-                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
+                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-[14px] leading-[16px] font-normal">
                                     + Create New Blueprint
                                 </button>
                             </div>
