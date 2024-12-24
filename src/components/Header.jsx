@@ -24,8 +24,8 @@ const Header = () => {
                             <img src={avatar} alt="" className="object-cover w-[30px] h-[30px] sm:[40px] sm:h-[40px]" />
                         </div>
                         <p className="text-[15px] font-medium leading-[20px]">Mark Adam</p>
-                        <div className="flex items-center bg-[#171A30] p-3 rounded-[10px] cursor-pointer">
-                            <img src={dropdownIcon} alt="dropdown" className="object-cover w-[30px] h-[30px]" />
+                        <div className="flex items-center bg-[#171A30] p-1 sm:p-3 rounded-[10px] cursor-pointer">
+                            <img src={dropdownIcon} alt="dropdown" className="object-cover w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]" />
                         </div>
                     </div>
                 </div>
