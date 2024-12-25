@@ -40,9 +40,9 @@ const CreateBlueprint = () => {
         <>
             {/* Error Warning */}
             {error && (
-                <div class="max-w-5xl flex items-center gap-2 p-4 border rounded-[4px] mx-auto border-[#765638] bg-[rgba(248,166,67,0.04)] text-[#A1A7BA] mb-3">
+                <div className="max-w-5xl flex items-center gap-2 p-4 border rounded-[4px] mx-auto border-[#765638] bg-[rgba(248,166,67,0.04)] text-[#A1A7BA] mb-3">
                     <img src={WarningIcon} alt="warning" className="object-cover" />
-                    <p class="text-[14px] leading-[14px] font-normal">Warning: You must create a name for your Blueprint</p>
+                    <p className="text-[14px] leading-[14px] font-normal">Warning: You must create a name for your Blueprint</p>
                 </div>
 
 

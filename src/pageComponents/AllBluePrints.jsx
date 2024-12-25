@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import BlueprintCard from "../components/BlueprintCard";
 import blueprintsData from "../data/blueprintData";
+import BlueprintCard from "../components/BluePrintCard";
 
 
 const AllBluePrints = () => {

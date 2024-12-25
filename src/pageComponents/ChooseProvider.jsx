@@ -1,5 +1,5 @@
 import xCloudLogo from '../assets/xCloud_Blue.svg';
-import dropdownIcon from '../assets/dropdown.svg';
+import dropdownIcon from '../assets/DropDown.svg';
 import cloudStorage from '../assets/cloudStorage.svg';
 import cloudServer from '../assets/cloudServer.svg';
 import { useState } from 'react';
@@ -134,11 +134,11 @@ const ChooseProvider = () => {
                         <div>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
                                 {/* Card 1 */}
-                                <div class="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-[#156EE5] text-gray-300 ">
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex items-center gap-2">
-                                            <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name One</h3>
-                                            <span class=" bg-[#313A6C] text-[#919DB9] rounded px-3 text-[12px]">default</span>
+                                <div className="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-[#156EE5] text-gray-300 ">
+                                    <div className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-2">
+                                            <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name One</h3>
+                                            <span className=" bg-[#313A6C] text-[#919DB9] rounded px-3 text-[12px]">default</span>
                                         </div>
                                         <label className="relative cursor-pointer">
                                             <input
@@ -162,20 +162,20 @@ const ChooseProvider = () => {
                                             </div>
                                         </label>
                                     </div>
-                                    <div class="mt-4 flex items-center space-x-2">
-                                        <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    <div className="mt-4 flex items-center space-x-2">
+                                        <span className="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
                                     </div>
 
                                 </div>
 
                                 {/*  Card 2 */}
-                                <div class="relative flex flex-col px-5 py-2 rounded-lg bg-[#1D2239]  text-gray-300 ">
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex items-center gap-2">
-                                            <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name Two</h3>
+                                <div className="relative flex flex-col px-5 py-2 rounded-lg bg-[#1D2239]  text-gray-300 ">
+                                    <div className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-2">
+                                            <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name Two</h3>
                                         </div>
                                         <label className="relative cursor-pointer">
                                             <input
@@ -199,20 +199,20 @@ const ChooseProvider = () => {
                                             </div>
                                         </label>
                                     </div>
-                                    <div class="mt-4 flex items-center space-x-2">
-                                        <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    <div className="mt-4 flex items-center space-x-2">
+                                        <span className="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
                                     </div>
 
                                 </div>
 
                                 {/* < Card 3  */}
-                                <div class="relative flex flex-col px-5 py-2  rounded-lg bg-[#1D2239]  text-gray-300 ">
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex items-center gap-2">
-                                            <h3 class="text-[14px] leading-[14px] font-medium">Blueprint Name Three</h3>
+                                <div className="relative flex flex-col px-5 py-2  rounded-lg bg-[#1D2239]  text-gray-300 ">
+                                    <div className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-2">
+                                            <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name Three</h3>
                                         </div>
                                         <label className="relative cursor-pointer">
                                             <input
@@ -236,11 +236,11 @@ const ChooseProvider = () => {
                                             </div>
                                         </label>
                                     </div>
-                                    <div class="mt-4 flex items-center space-x-2">
-                                        <span class="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
-                                        <span class="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
+                                    <div className="mt-4 flex items-center space-x-2">
+                                        <span className="px-2 py-1 text-xs font-medium text-[#6C90B4] bg-[#CCE6FF] rounded">A</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#C5A153] bg-[#FFE2A4] rounded">N</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#CE7C7C] bg-[#FFC4C4] rounded">X</span>
+                                        <span className="px-2 py-1 text-xs font-medium text-[#171A30] bg-[#80B7FF] rounded">4+</span>
                                     </div>
 
                                 </div>
