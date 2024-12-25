@@ -65,10 +65,13 @@ const CreateBlueprint = () => {
                         <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
                         <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                     </div>
+                    <div className="mb-6">
+
                     <AlphabetFilter
                         activeLetter={activeLetter}
                         onFilterChange={setActiveLetter}
                     />
+                    </div>
                     <PluginGrid plugins={plugins} />
                     <div className="mt-6 flex justify-end">
                         <button
