@@ -1,9 +1,18 @@
-import Page from "./components/page";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ChooseProvider from "./pageComponents/ChooseProvider";
+import CreateBlueprint from "./PageComponents/CreateBluePrint";
+
 
 const App = () => {
   return (
     <>
-        <Page />
+      <div className="bg-[#171A30]">
+        <Header />
+        {/* <ChooseProvider /> */}
+        <CreateBlueprint />
+        <Footer />
+      </div>
     </>
   );
 };
