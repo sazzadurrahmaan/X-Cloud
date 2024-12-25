@@ -1,7 +1,7 @@
 import xCloud from "../assets/X-Cloud.svg";
 import notifyIcon from "../assets/notification.svg";
 import avatar from "../assets/Avatar.svg";
-import dropdownIcon from "../assets/dropdown.svg";
+import dropdownIcon from "../assets/DropDown.svg";
 import { useState } from "react";
 
 const Header = () => {
