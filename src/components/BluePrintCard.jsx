@@ -1,12 +1,12 @@
 import React from "react";
 
-const BlueprintCard = ({ name, tags,index }) => {
+const BlueprintCard = ({ name, tags, index }) => {
   return (
-    <div className={`relative flex flex-col px-5 py-2 border rounded-lg bg-[#171A30] ${index ===0? 'border-[#156EE5]' : 'border-none'} `}>
+    <div className={`relative flex flex-col px-5 py-2 border rounded-lg bg-[#171A30] ${index === 0 ? 'border-[#156EE5]' : 'border-none'} `}>
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <h3 className="text-[14px] leading-[14px] font-medium text-white text-nowrap">{name}</h3>
-          {index===0 && (
+          {index === 0 && (
             <span className="bg-[#313A6C] text-white rounded-[4px] px-3 text-[12px]">
               default
             </span>
@@ -18,10 +18,10 @@ const BlueprintCard = ({ name, tags,index }) => {
             className="hidden peer"
             defaultChecked="" // First two checkboxes will be checked
           />
-          <div className={`w-4 h-4 rounded-full border  ${index ===0 ? 'border-[#147AFF]':'border-[#313A6C]'} flex items-center justify-center transition-all`}>
+          <div className={`w-4 h-4 rounded-full border  ${index === 0 ? 'border-[#147AFF]' : 'border-[#313A6C]'} flex items-center justify-center transition-all`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`h-4 w-4 ${index ===0 ? 'text-[#147AFF]': 'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
+              className={`h-4 w-4 ${index === 0 ? 'text-[#147AFF]' : 'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
               viewBox="0 0 20 20"
               fill="currentColor"
             >

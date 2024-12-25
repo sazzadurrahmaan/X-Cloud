@@ -8,11 +8,10 @@ const Tabs = ({ activeTab, onTabChange }) => {
         <button
           key={index}
           onClick={() => onTabChange(tab)}
-          className={`px-6 py-2 font-medium text-[18px] leading-[20px] ${
-            activeTab === tab
-              ? "text-[#FFFFFF] border-b-2 border-[#FFFFFF]"
-              : "text-[#A1A7BA] hover:text-white"
-          }`}
+          className={`px-6 py-2 font-medium text-[18px] leading-[20px] ${activeTab === tab
+            ? "text-[#FFFFFF] border-b-2 border-[#FFFFFF]"
+            : "text-[#A1A7BA] hover:text-white"
+            }`}
         >
           {tab}
         </button>

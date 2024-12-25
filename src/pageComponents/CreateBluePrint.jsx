@@ -33,7 +33,7 @@ const CreateBlueprint = () => {
             setError(false);
             navigate("/all-blueprints");
         }
-        
+
     };
 
     return (

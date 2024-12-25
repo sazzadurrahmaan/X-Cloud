@@ -1,9 +1,8 @@
-const PluginCard = ({ name, description, rating, installs, developer, logoImg, index,revewAmount }) => {
+const PluginCard = ({ name, description, rating, installs, developer, logoImg, index, revewAmount }) => {
   return (
     <div
-      className={`bg-[#171A30]  ${
-        index < 2 ? 'border border-[#147AFF]' : 'border-none'
-      } rounded-md hover:shadow-lg transition max-w-[318px]`}
+      className={`bg-[#171A30]  ${index < 2 ? 'border border-[#147AFF]' : 'border-none'
+        } rounded-md hover:shadow-lg transition max-w-[318px]`}
     >
       <div className="grid grid-cols-8 p-4">
         <div className="col-span-2">
@@ -24,7 +23,7 @@ const PluginCard = ({ name, description, rating, installs, developer, logoImg, i
             <div className="w-5 h-5 rounded-full border-2 border-[#147AFF] flex items-center justify-center transition-all ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-5 w-5 ${index<2?'text-[#147AFF]':'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
+                className={`h-5 w-5 ${index < 2 ? 'text-[#147AFF]' : 'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -39,8 +38,8 @@ const PluginCard = ({ name, description, rating, installs, developer, logoImg, i
         </div>
       </div>
       <div className="border-t border-[#1D2239] w-full p-4">
-      <p className="text-[14px] leading-[16px] mb-1 text-[#74778E] font-medium"><span className="text-[#FF9446] mr-2">{"★".repeat(rating)}☆</span>{revewAmount}</p>
-      <p className="text-[14px] leading-[16px]  font-semibold text-[#74778E]">{installs} Active Installations</p>
+        <p className="text-[14px] leading-[16px] mb-1 text-[#74778E] font-medium"><span className="text-[#FF9446] mr-2">{"★".repeat(rating)}☆</span>{revewAmount}</p>
+        <p className="text-[14px] leading-[16px]  font-semibold text-[#74778E]">{installs} Active Installations</p>
       </div>
     </div>
   );
