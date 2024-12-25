@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ChooseProvider from "./pageComponents/ChooseProvider";
 import CreateBlueprint from "./PageComponents/CreateBluePrint";
+import AllBluePrints from "./pageComponents/AllBluePrints";
 
 
 const App = () => {
@@ -9,8 +10,9 @@ const App = () => {
     <>
       <div className="bg-[#171A30]">
         <Header />
-        {/* <ChooseProvider /> */}
-        <CreateBlueprint />
+        <ChooseProvider />
+        {/* <CreateBlueprint /> */}
+        {/* <AllBluePrints /> */}
         <Footer />
       </div>
     </>
