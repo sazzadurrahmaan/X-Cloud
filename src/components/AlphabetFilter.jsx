@@ -39,14 +39,14 @@ const AlphabetFilter = ({ activeLetter, onFilterChange }) => {
                   : "bg-green-500 text-white hover:opacity-0"
               }`}
             >
-              {char === "M" ? <FaTimes className="h-3 w-3" /> : <FaCheck className="h-3 w-3" />}
+              {char === "M" ? <FaTimes className="h-2 w-2" /> : <FaCheck className="h-2 w-2" />}
             </span>
             <span
               className={`absolute top-[-4px] right-[-4px] bg-white text-red-500 border border-black  rounded-full p-1 opacity-0 transition-opacity duration-200 ${
                 char === "M" ? "opacity-0" : "hover:opacity-100"
               }`}
             >
-              <FaTimes className="h-3 w-3" />
+              <FaTimes className="h-2 w-2" />
             </span>
           </button>
         );
