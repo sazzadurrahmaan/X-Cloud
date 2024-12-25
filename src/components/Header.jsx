@@ -1,6 +1,6 @@
 import xCloud from "../assets/X-Cloud.svg";
 import notifyIcon from "../assets/notification.svg";
-import avatar from "../assets/avatar.svg";
+import avatar from "../assets/Avatar.svg";
 import dropdownIcon from "../assets/dropdown.svg";
 import { useState } from "react";
 
