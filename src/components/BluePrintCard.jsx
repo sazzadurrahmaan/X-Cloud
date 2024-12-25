@@ -21,7 +21,7 @@ const BlueprintCard = ({ name, tags,index }) => {
           <div className={`w-4 h-4 rounded-full border  ${index ===0 ? 'border-[#147AFF]':'border-[#313A6C]'} flex items-center justify-center transition-all`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`h-4 w-4 ${index ===0 ? 'text-[#147AFF]': 'text-transparent'}  transition-all peer-checked:text-blue-500`}
+              className={`h-4 w-4 ${index ===0 ? 'text-[#147AFF]': 'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
               viewBox="0 0 20 20"
               fill="currentColor"
             >

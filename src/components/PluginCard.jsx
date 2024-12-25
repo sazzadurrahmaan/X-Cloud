@@ -24,7 +24,7 @@ const PluginCard = ({ name, description, rating, installs, developer, logoImg, i
             <div className="w-5 h-5 rounded-full border-2 border-[#147AFF] flex items-center justify-center transition-all ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-5 w-5 ${index<2?'text-[#147AFF]':'text-transparent'}  transition-all peer-checked:text-blue-500`}
+                className={`h-5 w-5 ${index<2?'text-[#147AFF]':'text-transparent'}  transition-all peer-checked:text-[#147AFF]`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >

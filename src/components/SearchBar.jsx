@@ -8,7 +8,7 @@ const SearchBar = ({ value, onChange }) => {
                 value={value}
                 onChange={onChange}
                 placeholder="Search"
-                className="w-[250px] sm:w-[311px] px-5 py-3 rounded-[6px] bg-[#1D2239] text-[#74778E] text-[14px] leading-[20px] focus:text-white focus:outline-none focus:ring-1 focus:ring-blue-400"
+                className="w-[250px] sm:w-[311px] px-5 py-3 rounded-[6px] bg-[#1D2239] text-[#74778E] text-[14px] leading-[20px] focus:text-white focus:outline-none focus:ring-1 focus:ring-[#147AFF]"
             />
             <svg
                 xmlns="http://www.w3.org/2000/svg"
