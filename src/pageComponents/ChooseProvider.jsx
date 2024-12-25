@@ -3,9 +3,13 @@ import dropdownIcon from '../assets/dropdown.svg';
 import cloudStorage from '../assets/cloudStorage.svg';
 import cloudServer from '../assets/cloudServer.svg';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 const ChooseProvider = () => {
+
     const [isChecked, setIsChecked] = useState(false);
+    const navigate = useNavigate();
 
     const handleToggle = () => {
         setIsChecked(!isChecked);
@@ -247,7 +251,8 @@ const ChooseProvider = () => {
                                 <a href="#view-all" className="text-[#147AFF] hover:underline text-[14px] leading-[16px] font-semibold">
                                     View all →
                                 </a>
-                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-[14px] leading-[16px] font-semibold">
+                                <button onClick={() => navigate("/create-blueprint")}
+                                    className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-[14px] leading-[16px] font-semibold">
                                     + Create New Blueprint
                                 </button>
                             </div>

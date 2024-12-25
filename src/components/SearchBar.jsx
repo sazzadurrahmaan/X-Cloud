@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = ({ value, onChange }) => {
     return (
-        <div className="relative">
+        <div className="relative z-50">
             <input
                 type="text"
                 value={value}

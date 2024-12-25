@@ -6,6 +6,7 @@ import SearchBar from "../components/SearchBar";
 import PluginGrid from "../components/PluginGrid";
 import WarningIcon from "../assets/warning.svg";
 import pluginXcloud from "../assets/pluginXcloud.svg"
+import { useNavigate } from "react-router-dom";
 
 const CreateBlueprint = () => {
     const [blueprintName, setBlueprintName] = useState("");
@@ -13,6 +14,7 @@ const CreateBlueprint = () => {
     const [activeTab, setActiveTab] = useState("Plugins");
     const [activeLetter, setActiveLetter] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
+    const navigate = useNavigate();
 
     const plugins = [...Array(9)].map((_, index) => ({
         name: `Plugin Name ${index + 1}`,
@@ -29,8 +31,9 @@ const CreateBlueprint = () => {
             setError(true);
         } else {
             setError(false);
-
+            navigate("/all-blueprints");
         }
+        
     };
 
     return (
@@ -64,7 +67,7 @@ const CreateBlueprint = () => {
                             placeholder="Name your blueprint"
                             error={error}
                         />
-                        <div className="flex justify-between items-center mb-8 bg-[#171A30] px-2 py-4 rounded-[4px]">
+                        <div className="flex justify-between items-center mb-8 bg-[#171A30] px-2 py-4 rounded-[4px] ">
                             <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
                             <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                         </div>
