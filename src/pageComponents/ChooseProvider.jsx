@@ -134,7 +134,7 @@ const ChooseProvider = () => {
                         <div>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
                                 {/* Card 1 */}
-                                <div className="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-[#156EE5] text-gray-300 ">
+                                <div className="relative flex flex-col px-5 py-2 border rounded-lg bg-[#1D2239] border-[#156EE5]">
                                     <div className="flex items-center justify-between gap-2">
                                         <div className="flex items-center gap-2">
                                             <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name One</h3>
@@ -149,7 +149,7 @@ const ChooseProvider = () => {
                                             <div className="w-4 h-4 rounded-full border border-[#147AFF] flex items-center justify-center transition-all ">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className={`h-4 w-4 text-[#147AFF]  transition-all peer-checked:text-blue-500`}
+                                                    className={`h-4 w-4 text-[#147AFF]  transition-all peer-checked:text-[#147AFF]`}
                                                     viewBox="0 0 20 20"
                                                     fill="currentColor"
                                                 >
@@ -172,7 +172,7 @@ const ChooseProvider = () => {
                                 </div>
 
                                 {/*  Card 2 */}
-                                <div className="relative flex flex-col px-5 py-2 rounded-lg bg-[#1D2239]  text-gray-300 ">
+                                <div className="relative flex flex-col px-5 py-2 rounded-lg bg-[#1D2239] ">
                                     <div className="flex items-center justify-between gap-2">
                                         <div className="flex items-center gap-2">
                                             <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name Two</h3>
@@ -186,7 +186,7 @@ const ChooseProvider = () => {
                                             <div className="w-4 h-4 rounded-full border border-[#313A6C] flex items-center justify-center transition-all ">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className={`h-4 w-4 text-transparent  transition-all peer-checked:text-blue-500`}
+                                                    className={`h-4 w-4 text-transparent  transition-all peer-checked:text-[#147AFF]`}
                                                     viewBox="0 0 20 20"
                                                     fill="currentColor"
                                                 >
@@ -223,7 +223,7 @@ const ChooseProvider = () => {
                                             <div className="w-4 h-4 rounded-full border border-[#313A6C] flex items-center justify-center transition-all ">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className={`h-4 w-4 text-transparent  transition-all peer-checked:text-blue-500`}
+                                                    className={`h-4 w-4 text-transparent  transition-all peer-checked:text-[#147AFF]`}
                                                     viewBox="0 0 20 20"
                                                     fill="currentColor"
                                                 >
