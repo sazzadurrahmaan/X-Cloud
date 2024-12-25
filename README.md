@@ -88,8 +88,8 @@ all-blueprints-project/
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
-## Live Linke
-- [](https://x-cloud.netlify.app/)
+## Live Link
+-    https://x-cloud.netlify.app/
 
 
 ---
