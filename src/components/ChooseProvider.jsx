@@ -178,7 +178,7 @@ const ChooseProvider = () => {
                                 <a href="#view-all" className="text-[#147AFF] hover:underline text-[14px] leading-[16px] font-semibold">
                                     View all →
                                 </a>
-                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-[14px] leading-[16px] font-normal">
+                                <button className="bg-[#147AFF] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-[14px] leading-[16px] font-semibold">
                                     + Create New Blueprint
                                 </button>
                             </div>
@@ -194,8 +194,8 @@ const ChooseProvider = () => {
 
             {/* More Advanced Settings */}
             <div className="mt-8">
-                <button className="bg-[#1D2239] hover:bg-[#313A6C] text-white px-4 py-2 rounded-md flex items-center gap-2">
-                    <span>More Advanced Settings</span>
+                <button className="bg-[#2A325C] text-white px-4 py-2 rounded-[4px] flex items-center gap-2">
+                    <span className='font-normal text-[14px] leading-[20px] '>More Advanced Settings</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5"
