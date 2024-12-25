@@ -10,9 +10,9 @@ const App = () => {
     <>
       <div className="bg-[#171A30]">
         <Header />
-        <ChooseProvider />
+        {/* <ChooseProvider /> */}
         {/* <CreateBlueprint /> */}
-        {/* <AllBluePrints /> */}
+        <AllBluePrints />
         <Footer />
       </div>
     </>
