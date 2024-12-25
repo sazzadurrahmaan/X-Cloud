@@ -32,6 +32,7 @@ const CreateBlueprint = () => {
 
     return (
         <>
+            {/* Error Warning */}
             {error && (
                 <div class="max-w-5xl flex items-center gap-2 p-4 border rounded-[4px] mx-auto border-[#765638] bg-[rgba(248,166,67,0.04)] text-[#A1A7BA] mb-3">
                     <img src={WarningIcon} alt="warning" className="object-cover" />
@@ -41,23 +42,33 @@ const CreateBlueprint = () => {
 
             )}
             <div className="w-full max-w-5xl bg-[#1D2239] text-[#FFFFFF] rounded-lg mx-auto shadow-lg py-5 px-7">
-                {/* Error Warning */}
+
                 <section className="bg-[#1D2239] p-6 rounded-md max-w-5xl mx-auto">
-                    <h2 className="text-2xl font-bold mb-6">Create Blueprint</h2>
+                    {/* title */}
+                    <div className="flex items-center justify-between mb-6">
+                        <h2 className="font-medium text-[20px] sm:text-[32px] leading-[35px] ">Create Blueprint</h2>
+                        <button className="flex items-center justify-center w-6 h-6 border border-[#919DB9] rounded-lg text-[#919DB9] hover:text-white hover:border-white" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                                <line x1="6" y1="18" x2="18" y2="6" />
+                            </svg>
+                        </button>
+                    </div>
+                    {/* input field component */}
                     <InputField
                         value={blueprintName}
                         onChange={(e) => setBlueprintName(e.target.value)}
                         placeholder="Name your blueprint"
                         error={error}
                     />
-                    <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
-                    <div className="flex justify-between items-center mb-6">
-                        <AlphabetFilter
-                            activeLetter={activeLetter}
-                            onFilterChange={setActiveLetter}
-                        />
+                    <div className="flex justify-between items-center mb-6 bg-[#171A30] px-2 py-4 rounded-[4px]">
+                        <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
                         <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                     </div>
+                    <AlphabetFilter
+                        activeLetter={activeLetter}
+                        onFilterChange={setActiveLetter}
+                    />
                     <PluginGrid plugins={plugins} />
                     <div className="mt-6 flex justify-end">
                         <button
