@@ -9,17 +9,17 @@ import WarningIcon from "../assets/warning.svg";
 const CreateBlueprint = () => {
     const [blueprintName, setBlueprintName] = useState("");
     const [error, setError] = useState(false);
-    // const [activeTab, setActiveTab] = useState("Plugins");
-    // const [activeLetter, setActiveLetter] = useState("");
-    // const [searchTerm, setSearchTerm] = useState("");
+    const [activeTab, setActiveTab] = useState("Plugins");
+    const [activeLetter, setActiveLetter] = useState("");
+    const [searchTerm, setSearchTerm] = useState("");
 
-    // const plugins = [...Array(12)].map((_, index) => ({
-    //     name: `Plugin Name ${index + 1}`,
-    //     description: "Have an existing website already? Select this option to have.",
-    //     rating: 4,
-    //     installs: "5M+",
-    //     developer: "WPDeveloper",
-    // }));
+    const plugins = [...Array(12)].map((_, index) => ({
+        name: `Plugin Name ${index + 1}`,
+        description: "Have an existing website already? Select this option to have.",
+        rating: 4,
+        installs: "5M+",
+        developer: "WPDeveloper",
+    }));
 
     const handleNext = () => {
         if (!blueprintName.trim()) {
@@ -50,7 +50,7 @@ const CreateBlueprint = () => {
                         placeholder="Name your blueprint"
                         error={error}
                     />
-                    {/* <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
+                    <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
                     <div className="flex justify-between items-center mb-6">
                         <AlphabetFilter
                             activeLetter={activeLetter}
@@ -58,7 +58,7 @@ const CreateBlueprint = () => {
                         />
                         <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                     </div>
-                    <PluginGrid plugins={plugins} /> */}
+                    <PluginGrid plugins={plugins} />
                     <div className="mt-6 flex justify-end">
                         <button
                             onClick={handleNext}
