@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <div className="flex-grow">
           <Routes>
-            {/* Define routes for each component */}
+         
             <Route path="/" element={<ChooseProvider />} />
             <Route path="/create-blueprint" element={<CreateBlueprint />} />
             <Route path="/all-blueprints" element={<AllBluePrints />} />
