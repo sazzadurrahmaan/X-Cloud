@@ -3,16 +3,18 @@ import notifyIcon from "../assets/notification.svg";
 import avatar from "../assets/Avatar.svg";
 import dropdownIcon from "../assets/DropDown.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
 
     const [isNotification, setIsNotification] = useState(true);
+    const navigate = useNavigate();
 
     return (
         <header className="bg-[#1D2239]">
             <div className="w-full flex justify-between items-center mb-8 mx-auto max-w-screen-xl px-1 sm:px-2 lg:px-3 py-3 sm:py-4 lg:py-6   text-[#ffffff]">
                 <div className="max-w-[80px] max-h-[30px] sm:max-w-[128px] sm:max-h-[50px]">
-                    <img src={xCloud} alt="x-cloud logo" className="object-cover " />
+                    <img onClick={() => navigate("/")}  src={xCloud} alt="x-cloud logo" className="object-cover cursor-pointer " />
                 </div>
                 <div className="flex items-center gap-3 sm:gap-8 ">
                     <div className="flex items-center gap-1 sm:gap-2 flex-col justify-between">
