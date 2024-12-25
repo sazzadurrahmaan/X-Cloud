@@ -2,7 +2,7 @@ import React from "react";
 
 const BlueprintCard = ({ name, tags,index }) => {
   return (
-    <div className={`relative flex flex-col px-5 py-2 border rounded-lg bg-[#171A30] ${index ===0? 'border-[#156EE5]' : 'border-none'} text-gray-300 `}>
+    <div className={`relative flex flex-col px-5 py-2 border rounded-lg bg-[#171A30] ${index ===0? 'border-[#156EE5]' : 'border-none'} `}>
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <h3 className="text-[14px] leading-[14px] font-medium text-white text-nowrap">{name}</h3>

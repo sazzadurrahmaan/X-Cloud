@@ -12,7 +12,7 @@ const SearchBar = ({ value, onChange }) => {
             />
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute inset-y-0 flex items-center top-1/2 right-3 transform -translate-y-1/2 h-5 w-5 text-gray-400"
+                className="absolute inset-y-0 flex items-center top-1/2 right-3 transform -translate-y-1/2 h-5 w-5 text-[#919DB9]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

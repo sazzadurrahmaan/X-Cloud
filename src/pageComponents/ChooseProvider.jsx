@@ -209,7 +209,7 @@ const ChooseProvider = () => {
                                 </div>
 
                                 {/* < Card 3  */}
-                                <div className="relative flex flex-col px-5 py-2  rounded-lg bg-[#1D2239]  text-gray-300 ">
+                                <div className="relative flex flex-col px-5 py-2  rounded-lg bg-[#1D2239] ">
                                     <div className="flex items-center justify-between gap-2">
                                         <div className="flex items-center gap-2">
                                             <h3 className="text-[14px] leading-[14px] font-medium">Blueprint Name Three</h3>
